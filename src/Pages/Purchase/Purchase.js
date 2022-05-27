@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Purchase = ({ part }) => {
+const Purchase = ({ part, setPurchase }) => {
     const { _id, name, shortDescription, minimumOrderQuantity, avaiableQuantity, price, img } = part;
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -13,7 +13,11 @@ const Purchase = ({ part }) => {
                 <h2 className="text-2xl font-bold text-black">Price: {price}</h2>
             </div>
             <div className='w-2/4 mx-auto'>
-                <button className="btn btn-primary uppercase text-white font-bold mb-4 ">Purchase</button>
+                <label
+                    htmlFor="Purchase-modal"
+                    onClick={() => setPurchase(part)}
+                    className="btn btn-primary uppercase text-white font-bold mb-4 "
+                >Purchase</label>
             </div>
         </div>
     );
