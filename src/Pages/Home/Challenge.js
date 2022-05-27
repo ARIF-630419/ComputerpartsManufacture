@@ -2,7 +2,7 @@ import React from 'react';
 
 const Challenge = () => {
     return (
-        <section className='bg-slate-500 text-white m-8 rounded'>
+        <section className='bg-slate-500 text-white rounded'>
             <h1 className='text-center text-4xl text-lime-500 pt-12 pb-5 '>Challenges</h1>
             <p className='mx-20 my-2 text-xl text-justify'>
                 Computers are prone to damage, especially in an industrial setting. The knock on effects of computer failure, for an enterprise that relies solely on computers remaining operational, can be catastrophic and result in:
