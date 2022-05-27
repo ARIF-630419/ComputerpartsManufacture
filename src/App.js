@@ -3,7 +3,7 @@ import './App.css';
 import Blogs from './Pages/Blogs/Blogs';
 import Home from './Pages/Home/Home';
 import Portfolio from './Pages/Portfolio/Portfolio';
-import Purchase from './Pages/Purchase/Purchase';
+import Purchases from './Pages/Purchase/Purchases';
 import Navbar from './Pages/Shared/Navbar';
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="blogs" element={<Blogs></Blogs>} />
         <Route path="portfolio" element={<Portfolio></Portfolio>} />
-        <Route path="purchase" element={<Purchase></Purchase>} />
+        <Route path="purchase" element={<Purchases></Purchases>} />
 
       </Routes>
     </div>
