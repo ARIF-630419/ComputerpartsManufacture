@@ -5,14 +5,14 @@ import Footer from './Footer';
 import Challenge from './Challenge';
 import BussinessSummary from './BussinessSummary';
 import ComputerParts from './ComputerParts';
-import Reviews from './Reviews';
+import ShowReviews from './ShowReviews';
 const Home = () => {
     return (
         <div className='m-8'>
             <Banner></Banner>
             <ComputerParts></ComputerParts>
             <BussinessSummary></BussinessSummary>
-            <Reviews></Reviews>
+            <ShowReviews></ShowReviews>
             <Benefit></Benefit>
             <Challenge></Challenge>
             <Footer></Footer>
