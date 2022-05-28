@@ -4,6 +4,7 @@ import Purchase from './Purchase';
 import PurchaseModal from './PurchaseModal';
 
 const Purchases = () => {
+
     const [parts, setParts] = useParts();
     const [purchase, setPurchase] = useState(null);
     return (
