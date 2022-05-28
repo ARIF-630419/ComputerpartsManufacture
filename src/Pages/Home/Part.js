@@ -13,7 +13,7 @@ const Part = ({ part }) => {
                 <img src={img} alt="imgage" className='h-44'></img>
                 <h2 className="text-xl  text-black"><span className='font-bold'>Name: </span>{name}</h2>
                 <h2 className="  text-black text-justify"> <span className='font-bold'>Description: </span> {shortDescription}</h2>
-                <h2 className="text-xl  text-black"> <span className='font-bold'>Minimum Quantity: </span>{minimumOrderQuantity}</h2>
+                <h2 className="text-xl  text-black"> <span className='font-bold'>Minimum Order Quantity: </span>{minimumOrderQuantity}</h2>
                 <h2 className="text-xl  text-black"> <span className='font-bold'>Avaiable Quantity: </span>{avaiableQuantity}</h2>
                 <h2 className="text-2xl font-bold text-black">Price: {price}</h2>
             </div>

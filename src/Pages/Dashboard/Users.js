@@ -15,15 +15,14 @@ const Users = () => {
     }
     return (
         <div>
-            <h2 className="text-2xl">All Users: {users.length}</h2>
+            <h2 className="text-2xl mb-3">All Users: {users.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>_id</th>
+                            <th>Email</th>
+                            <th>Make Admin</th>
                         </tr>
                     </thead>
                     <tbody>
