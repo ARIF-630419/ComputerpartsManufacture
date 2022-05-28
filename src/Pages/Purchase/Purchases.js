@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useParts from '../hooks/useParts';
+import useParts from '../../hooks/useParts';
 import Purchase from './Purchase';
 import PurchaseModal from './PurchaseModal';
 

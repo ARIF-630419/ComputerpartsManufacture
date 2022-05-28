@@ -4,9 +4,19 @@ import auth from '../../firebase.init';
 import Order from './Order';
 
 const MyOrders = () => {
+
+
     const [orders, setOrders] = useState([]);
     const [user] = useAuthState(auth);
+    useEffect(() => {
+        if (user) {
+            fetch(`http://localhost:5000/order?email=${user.email}`)
+                .then(res => res.json())
+                .then(data => setOrders(data));
+        }
+    }, [user])
     const handleDelete = id => {
+
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
             const url = `http://localhost:5000/order/${id}`;
@@ -22,13 +32,6 @@ const MyOrders = () => {
         }
     }
 
-    useEffect(() => {
-        if (user) {
-            fetch(`http://localhost:5000/order?email=${user.email}`)
-                .then(res => res.json())
-                .then(data => setOrders(data));
-        }
-    }, [user])
 
     return (
         <div>
