@@ -6,7 +6,7 @@ const ComputerParts = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/parts')
+        fetch('https://still-tor-25168.herokuapp.com/parts')
             .then(res => res.json())
             .then(data => setParts(data));
     }, [])

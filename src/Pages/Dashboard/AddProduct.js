@@ -5,7 +5,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/parts`;
+        const url = `https://still-tor-25168.herokuapp.com/parts`;
         fetch(url, {
             method: 'POST',
             headers: {

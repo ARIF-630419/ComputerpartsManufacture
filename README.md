@@ -1,8 +1,13 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live website link: [https://computer-parts-manufacture.web.app/]
 
-## Available Scripts
+## Feature
+* purchase
+* Blogs
+* Dashboard
+* portfolio
+* Home
 
 In the project directory, you can run:
 

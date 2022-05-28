@@ -9,7 +9,7 @@ const ManageProducts = () => {
 
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/parts/${id}`;
+            const url = `https://still-tor-25168.herokuapp.com/parts/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

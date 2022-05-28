@@ -21,7 +21,7 @@ const MyProfile = () => {
 
 
         }
-        const Myurl = `http://localhost:5000/MyProfile`;
+        const Myurl = `https://still-tor-25168.herokuapp.com/MyProfile`;
         axios.post(Myurl, item)
             .then(response => {
                 const { data } = response;

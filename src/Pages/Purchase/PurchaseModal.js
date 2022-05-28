@@ -19,7 +19,7 @@ const PurchaseModal = ({ purchase, setPurchase }) => {
             Name: user.displayName,
             phone: event.target.phone.value
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://still-tor-25168.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
