@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const PurchaseModal = ({ purchase, setPurchase }) => {
-    const { _id, name, minimumOrderQuantity, avaiableQuantity } = purchase;
+    const { _id, name, minimumOrderQuantity, avaiableQuantity, price } = purchase;
     const [user] = useAuthState(auth);
 
     const handlePurchase = event => {
@@ -14,6 +14,7 @@ const PurchaseModal = ({ purchase, setPurchase }) => {
             orderId: _id,
             partsName: name,
             Quantity,
+            price: price,
             email: user.email,
             Name: user.displayName,
             phone: event.target.phone.value
