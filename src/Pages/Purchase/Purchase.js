@@ -12,7 +12,7 @@ const Purchase = ({ part, setPurchase }) => {
                 <h2 className="text-xl  text-black"> <span className='font-bold'>Avaiable Quantity: </span>{avaiableQuantity}</h2>
                 <h2 className="text-2xl font-bold text-black">Price: {price}</h2>
             </div>
-            <div className='w-2/4 mx-auto'>
+            <div className='w-2/4 mx-auto mb-5'>
                 <label
                     htmlFor="Purchase-modal"
                     onClick={() => setPurchase(part)}
