@@ -2,12 +2,12 @@
 
 Live website link: [https://computer-parts-manufacture.web.app/]
 
-## Feature
-* purchase
-* Blogs
-* Dashboard
-* portfolio
-* Home
+## Features
+* The user must login if he wants to purchase any parts.
+* If the user is logged in , some submenus will appear in the dashboard menu. Those are My Orders, Add Review and My Profile.
+* If admin will Log in he sees his dashboard. It has some menu are: my profile, make admin, add product, manage product and manage all orders.
+* When you go to the My order menu, the user has to order the parts see detailed information.
+* An admin can add or delete a part if he wents.
 
 In the project directory, you can run:
 
